@@ -4,6 +4,7 @@ using CretaceousApi.Models;
 
 namespace CretaceousApi.Controllers
 {
+  // [ApiExplorerSettings(IgnoreApi = true)]
   [Route("api/[controller]")]
   [ApiController]
   public class AnimalsController : ControllerBase
@@ -54,6 +55,7 @@ namespace CretaceousApi.Controllers
     }
 
     // POST api/animals
+    // [ApiExplorerSettings(IgnoreApi = true)]
     [HttpPost]
     public async Task<ActionResult<Animal>> Post(Animal animal)
     {
